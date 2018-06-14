@@ -1,3 +1,36 @@
+# Worldcat::Discovery UMD-Fork
+The worldcat-discovery-ruby repository is forked to provide a version of the gem
+that uses a custom version of spira that includes the fix for [spira #48][issue-48]
+issue. This UMD-Fork can be removed when the OCLC version can be updated to use
+a spira version that includes the fix for [spira #48][issue-48].
+
+## Using the UMD version
+The umd version of the gem will be deployed to the UMD Nexus. 
+
+1. Configure the gem source to include the UMD Nexus rubygems group
+```
+gem sources --add https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/
+
+# Or declare it as a source in Gemfile
+source 'https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/'
+```
+2. Use the `gem install` command or list the gem in the `Gemfile` or `gemspec` file.
+
+## UMD Versions
+See the [releases](./releases) tab for tags that include a fouth sequence 
+(E.g. `1.2.0.1` - `1.2.0` in the OCLC's worldcat-discovery version and `1`
+is the umd sub-version).
+
+## Deploying to Nexus
+1. Build the gem
+```
+gem build spira.gemspec
+```
+2. Follow the instructions at [UMD Nexus Ruby Gems][umd-nexus] to push to nexus.
+
+[issue-48]: https://github.com/ruby-rdf/spira/issues/48
+[umd-nexus]: https://confluence.umd.edu/display/LIB/UMD+Nexus+Ruby+Gems
+
 # Worldcat::Discovery
 
 Ruby gem wrapper around WorldCat Discovery API. 
