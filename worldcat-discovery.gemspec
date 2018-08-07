@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rdf', '~> 3.0', '>= 3.0.0'
   spec.add_runtime_dependency 'rdf-rdfxml', '~> 2.2', '>= 2.2.0'
   spec.add_runtime_dependency 'oclc-auth', '~> 1.0', '>= 1.0.0'
-  spec.add_runtime_dependency 'spira', ['= 3.0.0.1']
+  spec.add_runtime_dependency 'spira'  #, ['= 3.1.0.1']
   spec.add_runtime_dependency 'rest-client', '~> 2.0.1', '>= 2.0'
   spec.add_runtime_dependency 'addressable', '~> 2.3', '>= 2.3.6'
   
