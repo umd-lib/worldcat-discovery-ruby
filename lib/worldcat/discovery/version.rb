@@ -14,6 +14,6 @@
 
 module WorldCat
   module Discovery
-    VERSION = "1.2.0.1"
+    VERSION = "1.2.0.2"
   end
 end
