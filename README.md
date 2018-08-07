@@ -31,7 +31,7 @@ is the umd sub-version).
 1. Build the gem
 
 ```
-gem build spira.gemspec
+gem build worldcat-discovery.gemspec
 ```
 
 2. Follow the instructions at [UMD Nexus Ruby Gems][umd-nexus] to push to nexus.
